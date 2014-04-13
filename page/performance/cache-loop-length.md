@@ -6,12 +6,11 @@ attribution:
   - jQuery Fundamentals
 ---
 
-In a for loop, don't access the length property of an array every time; cache it beforehand.
+In a for loop, don't access the length property of an array every time; cache it using the little-used but built-in javascript for loop declaration.
 
 ```
-var myLength = myArray.length;
 
-for ( var i = 0; i < myLength; i++ ) {
+for ( var i = 0, iz = myArray.length; i < iz; i++ ) {
 
 	// do stuff
 
